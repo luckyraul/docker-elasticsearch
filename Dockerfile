@@ -1,4 +1,4 @@
-FROM docker.elastic.co/elasticsearch/elasticsearch-oss:6.8.15
+FROM opensearchproject/opensearch:1.2.4
 
-RUN bin/elasticsearch-plugin install analysis-phonetic
-RUN bin/elasticsearch-plugin install analysis-icu
+RUN bin/opensearch-plugin install analysis-phonetic
+RUN bin/opensearch-plugin install analysis-icu
